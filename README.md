@@ -15,7 +15,7 @@
 
 - 👨‍💻 All of my projects are available at my github [https://github.com/achyutp10](https://github.com/achyutp10)
 
-- 💬 Ask me about **Django and AI**
+- 💬 Discuss with me about **Django and AI**
 
 - 📫 Got a freelance gig? Hit me up via **achyutp10@gmail.com**
 
