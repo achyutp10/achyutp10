@@ -1,7 +1,7 @@
 <h1 align="center">Hello World, I'm Achyut Parajuli👋</h1>
 <div style="display: flex; justify-content: space-between; margin:15px">
   <h4 style="margin-right: 10px;">
-    A young developer from Nepal who loves to bring ideas to life. I grew up in the 2000's and fell in love with the computer and internet. People think I'm boring but I think I'm cool. 😎
+    A young developer from Nepal who loves to bring ideas to life. I grew up in the 2000's and fell in love with the computer and internet. People think I'm boring but I think I'm funny and that's cool. 😎
   </h4>
 </div>
 
