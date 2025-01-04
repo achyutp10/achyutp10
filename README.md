@@ -7,8 +7,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=achyutp10&label=Profile%20views&color=0e75b6&style=flat" alt="achyutp10" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=achyutp10" alt="achyutp10" /></a> </p>
-
 - 🌱 I’m currently learning **React, Django and AI**
 
 - 👨‍💻 All of my projects are available at my github [https://github.com/achyutp10](https://github.com/achyutp10)
