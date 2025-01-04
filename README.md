@@ -28,7 +28,21 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=achyutp10&show_icons=true&locale=en&layout=compact" alt="achyutp10" /></p>
 
-![Total Stars](https://img.shields.io/github/stars/achyutp10?style=social)
+## GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&count_private=true&hide=prs&theme=radical)
+
+## Streak Stats
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=achyutp10)
+
+## Top Languages
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=achyutp10&layout=compact&theme=radical)
+
+## GitHub Activity
+![GitHub Activity](https://activity-graph.herokuapp.com/graph?username=achyutp10&bg_color=000000&color=00ff00&line=00ff00&point=00ff00)
+
+## GitHub Trophy
+![Trophy](https://github-profile-trophy.vercel.app/?username=achyutp10&theme=radical)
+
 
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=achyutp10&" alt="achyutp10" /></p>
