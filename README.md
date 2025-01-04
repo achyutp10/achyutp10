@@ -30,7 +30,6 @@
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&count_private=true&hide=prs&theme=radical)
 
-## GitHub Activity
-![GitHub Activity](https://activity-graph.herokuapp.com/graph?username=achyutp10&bg_color=000000&color=00ff00&line=00ff00&point=00ff00)
+## GitHub Streaks
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=achyutp10&" alt="achyutp10" /></p>
