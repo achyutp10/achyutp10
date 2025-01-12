@@ -32,4 +32,7 @@
 
 ## GitHub Streaks
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=achyutp10&" alt="achyutp10" /></p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=achyutp10&theme=radical" alt="GitHub Streak Stats">
+</p>
+
