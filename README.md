@@ -7,11 +7,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=achyutp10&label=Profile%20views&color=0e75b6&style=flat" alt="achyutp10" /> </p>
 
-- 🌱 I’m currently learning **React, Django and AI**
+- 🌱 I’m currently learning **React & Django**
 
 - 👨‍💻 All of my projects are available at my github [https://github.com/achyutp10](https://github.com/achyutp10)
 
-- 💬 Discuss with me about **React, Django and AI**
+- 💬 Discuss with me about **React, Django & AI**
 
 - 📫 Got a freelance gig? Hit me up via **achyutp10@gmail.com**
 
