@@ -1,4 +1,3 @@
-[![achyutp10 profile views](https://u8views.com/api/v1/github/profiles/106427602/views/day-week-month-total-count.svg)](https://u8views.com/github/achyutp10)
 ```js
 class Person {
   constructor({ intro, bio, skills, currentLearning, github, freelance, social }) {
