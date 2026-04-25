@@ -8,11 +8,9 @@
 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=achyutp10&theme=blue_navy&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=achyutp10&theme=blue_navy&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=achyutp10&theme=blue_navy&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+# 📊 GitHub Stats
 
-[![](https://visitcount.itsvg.in/api?id=achyutp10&icon=6&color=1)](https://visitcount.itsvg.in)
+![](https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&hide=issues,prs,contribs&count_private=true&include_all_commits=true)
+
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
