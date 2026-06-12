@@ -1,0 +1,53 @@
+# ════════════════════════════════════════════════════════════
+# 🌌  3D CONTRIBUTION GALAXY — GitHub Actions Workflow
+# Generates an animated 3D pixel-art contribution calendar
+# with seasonal themes and walking pixel characters.
+# Runs every 24 hours + on every push to main.
+# Output: profile-3d-contrib/ folder on the `output` branch
+# ════════════════════════════════════════════════════════════
+
+name: Generate 3D Contribution Calendar 🌌
+
+on:
+  schedule:
+    # Runs every 24 hours at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:     # Allow manual trigger from Actions tab
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate 3D Contribution Graph
+
+    steps:
+      # ── Step 1: Checkout the repository ──────────────────
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # ── Step 2: Generate the 3D SVG files ────────────────
+      # This creates multiple themed 3D SVG files including:
+      # - profile-south-season-animate.svg  ← ANIMATED with pixel characters!
+      # - profile-night-rainbow.svg
+      # - profile-gitblock.svg
+      # - profile-night-green.svg
+      # - (and more seasonal/theme variants)
+      - name: Generate 3D Contribution Graph
+        uses: yoshi-code-bot/github-profile-3d-contrib@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          username: achyutp10
+
+      # ── Step 3: Deploy generated files to `output` branch ─
+      - name: Deploy to Output Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: output
+          folder: profile-3d-contrib
+          target-folder: profile-3d-contrib
+          clean: false          # ← Important: don't delete snake files
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🌌 Auto-update 3D Contribution Calendar [skip ci]"
