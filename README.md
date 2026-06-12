@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=800&color=00FFFF&center=true&vCenter=true&width=750&height=65&lines=⚖️+Building+JusticeConnect+AI...;🤖+Principal+AI+Solutions+Architect;💻+Enterprise+Full+Stack+Engineer;🌐+Where+Law+Meets+Artificial+Intelligence;🚀+Turning+Code+into+Justice;🔧+Making+Justice+a+Right%2C+Not+a+Privilege" alt="Typing SVG" />
-</a>
+  
 
 <br/>
 
