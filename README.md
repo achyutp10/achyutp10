@@ -38,7 +38,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/achyutp10/achyutp10/output/profile-3d-contrib/profile-south-season-animate.svg" width="100%" alt="3D Animated Contribution Calendar"/>
+<img src="https://raw.githubusercontent.com/achyutp10/achyutp10/main/profile-3d-contrib/profile-south-season-animate.svg" width="100%" alt="3D Animated Contribution Calendar"/>
 
 </div>
 
