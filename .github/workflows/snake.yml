@@ -1,9 +1,13 @@
 # ════════════════════════════════════════════════════════════
 # 🐍  CONTRIBUTION SNAKE — GitHub Actions Workflow
-# Generates an animated snake eating through your
-# GitHub contribution grid. Updates every 12 hours.
-# Creates both light + dark mode SVG variants.
-# Output: root of the `output` branch
+#
+# ✅ FIXED: Replaced JamesIves deploy action (needs checkout)
+#           with crazy-max/ghaction-github-pages (handles its
+#           own git init — the official Platane/snk approach)
+#
+# Generates animated snake SVGs and pushes to `output` branch.
+# README references:
+#   https://raw.githubusercontent.com/achyutp10/achyutp10/output/github-contribution-grid-snake-dark.svg
 # ════════════════════════════════════════════════════════════
 
 name: Generate Contribution Snake 🐍
@@ -12,7 +16,7 @@ on:
   schedule:
     # Runs every 12 hours at 6am and 6pm UTC
     - cron: "0 6,18 * * *"
-  workflow_dispatch:     # Allow manual trigger from Actions tab
+  workflow_dispatch:   # ← Manual trigger from Actions tab
   push:
     branches:
       - main
@@ -25,10 +29,7 @@ jobs:
       contents: write
 
     steps:
-      # ── Step 1: Generate snake SVG animations ────────────
-      # Generates two files in ./dist/:
-      # - github-contribution-grid-snake.svg        (light mode)
-      # - github-contribution-grid-snake-dark.svg   (dark mode)
+      # ── Step 1: Generate both light + dark SVGs into dist/ ─
       - name: Generate Snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
@@ -39,13 +40,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── Step 2: Deploy snake SVGs to `output` branch ─────
+      # ── Step 2: Push dist/ to the `output` branch ─────────
+      # crazy-max/ghaction-github-pages handles git init itself.
+      # No prior `actions/checkout` needed.
+      # keep_history: true ensures the 3D calendar files already
+      # on the output branch are NOT deleted.
       - name: Deploy to Output Branch
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          branch: output
-          folder: dist
-          target-folder: .           # Snake files go to root of output
-          clean: false               # ← Important: don't delete 3D files
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🐍 Auto-update Contribution Snake [skip ci]"
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
