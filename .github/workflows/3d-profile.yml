@@ -2,52 +2,55 @@
 # 🌌  3D CONTRIBUTION GALAXY — GitHub Actions Workflow
 # Generates an animated 3D pixel-art contribution calendar
 # with seasonal themes and walking pixel characters.
-# Runs every 24 hours + on every push to main.
-# Output: profile-3d-contrib/ folder on the `output` branch
+#
+# ✅ FIXED: Correct action owner is yoshi389111 (not yoshi-code-bot)
+# ✅ FIXED: Uses USERNAME env var (not `with: username`)
+# ✅ FIXED: Commits generated SVGs directly to `main` branch
+#
+# Runs every 24 hours + on manual trigger.
+# Output: profile-3d-contrib/ folder committed to main branch.
+# Reference in README as:
+#   https://raw.githubusercontent.com/achyutp10/achyutp10/main/profile-3d-contrib/profile-south-season-animate.svg
 # ════════════════════════════════════════════════════════════
 
 name: Generate 3D Contribution Calendar 🌌
 
 on:
   schedule:
-    # Runs every 24 hours at midnight UTC
-    - cron: "0 0 * * *"
-  workflow_dispatch:     # Allow manual trigger from Actions tab
-  push:
-    branches:
-      - main
+    # Runs daily at 18:00 UTC (03:00 JST next day)
+    - cron: "0 18 * * *"
+  workflow_dispatch:   # ← Allows manual trigger from the Actions tab
+
+permissions:
+  contents: write      # ← Required to commit & push the generated SVGs
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Generate 3D Contribution Graph
+    name: generate-github-profile-3d-contrib
 
     steps:
-      # ── Step 1: Checkout the repository ──────────────────
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      # ── Step 1: Checkout ──────────────────────────────────
+      - uses: actions/checkout@v5
 
-      # ── Step 2: Generate the 3D SVG files ────────────────
-      # This creates multiple themed 3D SVG files including:
-      # - profile-south-season-animate.svg  ← ANIMATED with pixel characters!
-      # - profile-night-rainbow.svg
-      # - profile-gitblock.svg
-      # - profile-night-green.svg
-      # - (and more seasonal/theme variants)
-      - name: Generate 3D Contribution Graph
-        uses: yoshi-code-bot/github-profile-3d-contrib@main
+      # ── Step 2: Generate all 3D SVG variants ─────────────
+      # Correct action: yoshi389111/github-profile-3d-contrib
+      # USERNAME is passed as an env var, NOT as `with: username`
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          username: achyutp10
+          USERNAME: ${{ github.repository_owner }}   # auto-resolves to achyutp10
 
-      # ── Step 3: Deploy generated files to `output` branch ─
-      - name: Deploy to Output Branch
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: output
-          folder: profile-3d-contrib
-          target-folder: profile-3d-contrib
-          clean: false          # ← Important: don't delete snake files
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🌌 Auto-update 3D Contribution Calendar [skip ci]"
+      # ── Step 3: Commit & push the SVGs to main ───────────
+      # SVGs are written into profile-3d-contrib/ in the workspace.
+      # This step commits them back to the main branch.
+      - name: Commit & Push generated SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          if git commit -m "🌌 Auto-update 3D Contribution Calendar [skip ci]"; then
+            git push
+          else
+            echo "Nothing to commit — SVGs unchanged."
+          fi
