@@ -33,7 +33,6 @@
 <!--    Pixel-art characters walk on 3D bars!           -->
 <!-- ═══════════════════════════════════════════════════ -->
 
-## 🌌 &nbsp; 3D Contribution Galaxy
 
 <div align="center">
 
@@ -48,9 +47,8 @@
 <!--    Generated every 12h by GitHub Actions           -->
 <!-- ═══════════════════════════════════════════════════ -->
 
-## 🐍 &nbsp; Contribution Snake
 
-<div align="center">
+<!-- <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/achyutp10/achyutp10/output/github-contribution-grid-snake-dark.svg"/>
@@ -58,7 +56,7 @@
   <img alt="Contribution Snake Animation" src="https://raw.githubusercontent.com/achyutp10/achyutp10/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 </picture>
 
-</div>
+</div> -->
 
 ---
 
@@ -70,9 +68,7 @@
 
 <div align="center">
 
-## GitHub Stats
-
-<img height="185em" src="https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&hide=issues,prs&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+<!-- <img height="185em" src="https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&hide=issues,prs&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" /> -->
 
 <img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=achyutp10&layout=compact&theme=tokyonight&hide_border=true" />
 
