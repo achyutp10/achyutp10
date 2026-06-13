@@ -11,6 +11,8 @@
   &nbsp;
   <img src="https://img.shields.io/github/followers/achyutp10?style=for-the-badge&logo=github&color=1F6FEB&label=FOLLOWERS" alt="Followers"/>
   &nbsp;
+  <img src="https://img.shields.io/github/stars/achyutp10?style=for-the-badge&logo=github&color=1F6FEB&label=STARS" alt="Stars"/>
+  &nbsp;
   <a href="https://linkedin.com/in/achyutp10">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
@@ -18,10 +20,7 @@
   <a href="mailto:achyutp10@gmail.com">
     <img src="https://img.shields.io/badge/Email-Hire%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  &nbsp;
-  <a href="https://skyline.github.com/achyutp10/2024">
-    <img src="https://img.shields.io/badge/GitHub-Skyline_3D-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Skyline"/>
-  </a>
+  
 </p>
 
 </div>
