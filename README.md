@@ -69,7 +69,7 @@
 
 <!-- <img height="185em" src="https://github-readme-stats.vercel.app/api?username=achyutp10&show_icons=true&hide=issues,prs&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" /> -->
 
-<img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=achyutp10&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="185em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=achyutp10&layout=compact&theme=tokyonight&hide_border=true" />
 
 <img src="https://streak-stats.demolab.com?user=achyutp10&theme=tokyonight-duo&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&background=0D1117&stroke=7C3AED&ring=00FFFF&fire=FF6B6B&currStreakLabel=cdd6f4" alt="GitHub Streak Stats"/>
 
